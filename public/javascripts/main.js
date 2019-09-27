@@ -4,6 +4,12 @@ $( function() {
 }) ;
 
 
+/**
+ * Fn HeaderChangeOnScroll
+ * 
+ * Header change when scrolling document
+ * 
+ */
 var HeaderChangeOnScroll = function() {
     $(window).scroll(function() {
         if( $( window ).scrollTop() > 100 ) {
@@ -16,6 +22,12 @@ var HeaderChangeOnScroll = function() {
     }
 )} ;
 
+/**
+ * Fn backToTopDisplay
+ * 
+ * Displays the back to the top button when scrolling
+ * 
+ */
 var backToTopDisplay = function() {
     $(window).scroll(function() {
         if( $( window ).scrollTop() > 500 ) {

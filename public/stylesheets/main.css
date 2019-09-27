@@ -171,17 +171,15 @@ section#home .content h2 {
 /*****************************
 ******** ABOUT SECTION ********
 ******************************/
-
-section#about .content {
-    width: 50% ;
+div#about-row {
+    display: flex;
 }
 
-section#about div.img {
-    width: 50% ;
+div#about-row div {
+    width: 50%;
 }
 
 section#about img {
-    width: 550px ;
     position: relative;
     bottom: 50px;
 }
