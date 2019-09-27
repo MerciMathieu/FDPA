@@ -9,13 +9,15 @@
     --second-yellow-color: rgb(255, 252, 59);
     --black-color: black;
     --white-color: white;
+    --grey-color: rgba(224, 222, 222, 0.747);
 
     /* SHADOWS */
-    --shadow: 4px 4px 5px -4px;
+    --shadow-bottom: 4px 4px 5px -4px;
+    --shadow-top: 0 8px 20px 2px;
 } 
 
 .boxshadow {
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-bottom);
 }
 
 
@@ -51,7 +53,7 @@ html {
 
 
 .back2top:hover {
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-bottom);
     background-color: var(--second-yellow-color);
 }
 
@@ -101,11 +103,15 @@ h2 {
     font-size: 2.8rem;
 }
 
+h3 {
+    font-size: 1.8rem;
+}
+
 p {
     font-size: 1.6rem;
 }
 
-button.btn {
+button.btn.my-btn {
     font-size: 1.8rem;
     padding: 10px;
     width: 150px;
@@ -117,9 +123,9 @@ button.btn {
     border: none;
 }
 
-button.btn:hover {
+button.btn.my-btn:hover {
     background-color: var(--second-yellow-color);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-bottom);
 }
 
 /*****************************
@@ -138,6 +144,10 @@ section#home .content {
 
 section#home .content h1 {
     font-size: 8rem;
+}
+
+section#home .content h2 {
+    color: var(--white-color);
 }
 
 
@@ -201,11 +211,74 @@ legend {
 }
 
 
+/*****************************
+******** FIND US SECTION ********
+******************************/
+.row#contact-row{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.row#contact-row div.contact-informations {
+    margin: auto;
+}
+
+.row#contact-row div.contact-informations p.info {
+    color: var(--first-purple-color);
+    font-weight: bold;
+}
+
+.row#access-row i {
+    font-size: 3rem;
+}
+
+/*****************************
+******** NEWS SECTION ********
+******************************/
+
+section#news {
+    width: 95%;
+    margin: auto;
+}
+
+div#news-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav#nav-news {
+    margin: 40px;
+}
+
+ul.pagination {
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+ul.pagination a{
+    color: var(--first-purple-color);
+}
+
+.card {
+    width: 300px;
+}
 
 
 /*****************************
 ******** NEWS SECTION ********
 ******************************/
-.card {
-    width: 300px;
+footer {
+    background-color: var(--grey-color);
+    box-shadow: var(--shadow-top);
+}
+
+ul#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul#socials li a i{
+    font-size: 3.5rem;
+    margin: 5px;
 }
