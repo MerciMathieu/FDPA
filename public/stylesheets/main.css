@@ -9,15 +9,28 @@
     --second-yellow-color: rgb(255, 252, 59);
     --black-color: black;
     --white-color: white;
-    --grey-color: rgba(224, 222, 222, 0.747);
+    --grey-color: rgb(248, 248, 248);
 
     /* SHADOWS */
     --shadow-bottom: 4px 4px 5px -4px;
     --shadow-top: 0 8px 20px 2px;
 } 
 
+
+/*****************************
+******* GENERAL CLASSES ******
+******************************/
+
 .boxshadow {
     box-shadow: var(--shadow-bottom);
+}
+
+.purple-section {
+    background-color: #9019FF;
+}
+
+.section-grey {
+    background-color: rgba(233, 233, 233, 0.363);
 }
 
 
@@ -62,7 +75,7 @@ html {
 }
 
 section {
-    padding: 20px;
+    padding: 30px;
 }
 
 .navbar {
@@ -70,6 +83,10 @@ section {
     -moz-transition: all ease-out .3s;
     -o-transition: all ease-out .3s;
     transition: all ease-out .3s;
+}
+
+.bg-grey {
+    background-color: var(--grey-color);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -178,10 +195,14 @@ section#about img {
     margin: auto;
 }
 
-.movie {
+.movie-img {
     width: 300px;
     height: 400px;
     margin: 10px;
+}
+
+.movie-img:hover {
+    box-shadow: var(--shadow-bottom);
 }
 
 
@@ -214,9 +235,12 @@ legend {
 /*****************************
 ******** FIND US SECTION ********
 ******************************/
-.row#contact-row{
-    width: 80%;
+div#contact-row{
+    width: 100%;
     margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .row#contact-row div.contact-informations {
@@ -224,12 +248,28 @@ legend {
 }
 
 .row#contact-row div.contact-informations p.info {
-    color: var(--first-purple-color);
     font-weight: bold;
+}
+
+p.info-title i {
+    font-weight: bold;
+    color: var(--first-purple-color);
+}
+
+.row#access-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row#access-row div {
+    width: 40%;
+    text-align: center;
 }
 
 .row#access-row i {
     font-size: 3rem;
+    color: var(--first-purple-color) !important;
 }
 
 /*****************************

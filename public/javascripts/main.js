@@ -7,10 +7,10 @@ $( function() {
 var HeaderChangeOnScroll = function() {
     $(window).scroll(function() {
         if( $( window ).scrollTop() > 100 ) {
-            $('.navbar-light').addClass('bg-light boxshadow') ;
+            $('.navbar-light').addClass('bg-grey boxshadow') ;
             $('.nav-link').addClass('black') ;
         } else {
-            $('.navbar-light').removeClass('bg-light boxshadow') ;
+            $('.navbar-light').removeClass('bg-grey boxshadow') ;
             $('.nav-link').removeClass('black') ;
         }
     }
