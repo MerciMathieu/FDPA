@@ -1,0 +1,211 @@
+/*****************************
+********** VARIABLES *********
+******************************/
+:root{
+    /* COLORS */
+    --first-purple-color: #B400FF;
+    --second-purple-color: #9019FF;
+    --first-yellow-color: rgb(255, 209, 59);
+    --second-yellow-color: rgb(255, 252, 59);
+    --black-color: black;
+    --white-color: white;
+
+    /* SHADOWS */
+    --shadow: 4px 4px 5px -4px;
+} 
+
+.boxshadow {
+    box-shadow: var(--shadow);
+}
+
+
+/*****************************
+********** GENERAL ***********
+******************************/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+.back2top {
+    background-color: var(--first-yellow-color);
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+    right: 5px;
+    position: fixed;
+    bottom: 25px;
+    display: none ;
+}
+
+.display-block {
+    display: block;
+}
+
+
+.back2top:hover {
+    box-shadow: var(--shadow);
+    background-color: var(--second-yellow-color);
+}
+
+.back2top i {
+    padding-top: 35%;
+}
+
+section {
+    padding: 20px;
+}
+
+.navbar {
+    -webkit-transition: all ease-out .3s;
+    -moz-transition: all ease-out .3s;
+    -o-transition: all ease-out .3s;
+    transition: all ease-out .3s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    margin: auto 5px;
+}
+
+.navbar-light .navbar-nav .nav-link.black {
+    color: var(--black-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:active {
+    color: var(--first-yellow-color);
+}
+
+.navbar-light .navbar-nav .nav-link.current {
+    color: var(--first-yellow-color);
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+button.btn {
+    font-size: 1.8rem;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: var(--first-yellow-color);
+    color: var(--black-color) ;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+button.btn:hover {
+    background-color: var(--second-yellow-color);
+    box-shadow: var(--shadow);
+}
+
+/*****************************
+******** HOME SECTION ********
+******************************/
+section#home {
+    height: 100vh;
+    background: url('/public/img/cinema-plein-air.jpg') center no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section#home .content {
+    padding-top: 15%;
+}
+
+section#home .content h1 {
+    font-size: 8rem;
+}
+
+
+/*****************************
+******** ABOUT SECTION ********
+******************************/
+
+section#about .content {
+    width: 50% ;
+}
+
+section#about div.img {
+    width: 50% ;
+}
+
+section#about img {
+    width: 550px ;
+    position: relative;
+    bottom: 50px;
+}
+
+
+/*****************************
+******** CINEMA SECTION ********
+******************************/
+.movies {
+    width: 100%;
+    margin: auto;
+}
+
+.movie {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+
+
+/*****************************
+******** INSCRIPTION SECTION ********
+******************************/
+form {
+    width: 65%;
+    margin: auto;
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+legend {
+    width: min-content;
+}
+
+::placeholder, .form-control, label, legend {
+    font-size: 1.6rem;
+}
+
+.form-control {
+    height: 40px;
+}
+
+
+
+
+/*****************************
+******** NEWS SECTION ********
+******************************/
+.card {
+    width: 300px;
+}
