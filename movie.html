@@ -6,42 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Festival Films de Plein Air</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/stylesheets/main.css">
+    <link rel="stylesheet" href="public/stylesheets/main.css">
 </head>
 <body>
-    <a href="#"><div class="back2top"><i class="fas fa-arrow-up"></i></div></a>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top ml-auto">
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ml-auto bg-grey boxshadow">
+        <button class="navbar-toggler ml-auto btn my-btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-right" id="navbarNav">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item active">
-                    <a class="nav-link black current" href="#">Accueil</a>
+                    <a class="nav-link current black" href="index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">A propos</a>
+                    <a class="nav-link black" href="index.html#about">Le festival</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#cinema">Cinémathèque</a>
+                    <a class="nav-link black" href="index.html#cinema">Films</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#inscription">Inscription</a>
+                    <a class="nav-link black" href="index.html#inscription">Inscription</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#find-us">Où sommes-nous?</a>
+                    <a class="nav-link black" href="index.html#find-us">Où sommes-nous?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#news">Actualités</a>
+                    <a class="nav-link black" href="index.html#news">Actualités</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-
-<!-- CODER ICI -->
-
-
+    <section id="movie" class="mt-5">
+        <div class="content mt-5">
+            <h1>Black coal</h1>
+            <div id="movie-content" class="mt-2">
+                <img src="public/img/movies/black-coal.jpg" class="img-fluid img-movie-infos" alt="affiche du film black coal">
+                <div class="infos mx-5">
+                    <p><b>Date de sortie:</b> 02 septembre 1986 (1h20)</p>
+                    <p><b>De:</b> Diao Yinan</p>
+                    <p><b>Avec:</b> Liao Fan, Lun-mei Gwei, Xue-bing Wang</p>
+                    <p><b>Genre:</b> Policier</p>
+                    <p><b>Nationalité:</b> Chine</p>
+                    <p><b>Heure de diffusion:</b> 18h05</p>
+                    <div class="controls">
+                        <a href="index.html#inscription"><button type="button" class="btn my-btn">Participer</button></a>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <b>Synopsis:</b><br/> En 1999, plusieurs parties d'un cadavre sont retrouvées dans une dizaine d'usines à charbon aux 4 coins de la Mandchourie. L'inspecteur Zhang est chargé de l'enquête et bientôt une piste le mène à un premier suspect. Cependant, l'interpellation tourne mal. Zhang, grièvement blessé, est contraint de quitter la police. 5 ans plus tard, de nouveaux meurtres sont commis dans la région.
+            </p>
+        </div>
+    </section>
     <footer class="page-footer font-small pt-4">
         <div class="container-fluid text-center">  
             <div class="mb-3">
@@ -66,7 +82,6 @@
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="/public/javascripts/main.js"></script>
     <script src="https://kit.fontawesome.com/0d820e1095.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

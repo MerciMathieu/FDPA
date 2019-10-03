@@ -6,39 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Festival Films de Plein Air</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/stylesheets/main.css">
+    <link rel="stylesheet" href="public/stylesheets/main.css">
 </head>
 <body>
-    <a href="#"><div class="back2top"><i class="fas fa-arrow-up"></i></div></a>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top ml-auto">
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top ml-auto bg-grey boxshadow">
+        <button class="navbar-toggler ml-auto btn my-btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-right" id="navbarNav">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item active">
-                    <a class="nav-link black current" href="#">Accueil</a>
+                    <a class="nav-link current black" href="index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">A propos</a>
+                    <a class="nav-link black" href="index.html#about">Le festival</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#cinema">Cinémathèque</a>
+                    <a class="nav-link black" href="index.html#cinema">Films</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#inscription">Inscription</a>
+                    <a class="nav-link black" href="index.html#inscription">Inscription</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#find-us">Où sommes-nous?</a>
+                    <a class="nav-link black" href="index.html#find-us">Où sommes-nous?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#news">Actualités</a>
+                    <a class="nav-link black" href="index.html#news">Actualités</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-    <!-- coder ici -->
+    <section id="topic">
+        <div class="content mt-5">
+            <img src="https://picsum.photos/550/300.jpg" alt="actualité">
+            <div id="topic-text-content">
+                <h1>Titre de mon actualité</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Tenetur molestias cupiditate optio voluptates dolorem porro non, 
+                    aperiam rerum, nam, vero libero reiciendis hic quas earum neque. 
+                    Saepe, voluptatum repellendus vitae laudantium aperiam voluptatem expedita asperiores, ab sunt sit iure! 
+                    Consectetur molestiae modi laudantium beatae voluptates. Iusto provident iure ratione. Rerum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Tenetur molestias cupiditate optio voluptates dolorem porro non, 
+                    aperiam rerum, nam, vero libero reiciendis hic quas earum neque. 
+                    Saepe, voluptatum repellendus vitae laudantium aperiam voluptatem expedita asperiores, ab sunt sit iure! 
+                    Consectetur molestiae modi laudantium beatae voluptates. Iusto provident iure ratione. Rerum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Tenetur molestias cupiditate optio voluptates dolorem porro non, 
+                    aperiam rerum, nam, vero libero reiciendis hic quas earum neque. 
+                    Saepe, voluptatum repellendus vitae laudantium aperiam voluptatem expedita asperiores, ab sunt sit iure! 
+                    Consectetur molestiae modi laudantium beatae voluptates. Iusto provident iure ratione. Rerum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Tenetur molestias cupiditate optio voluptates dolorem porro non, 
+                    aperiam rerum, nam, vero libero reiciendis hic quas earum neque. 
+                    Saepe, voluptatum repellendus vitae laudantium aperiam voluptatem expedita asperiores, ab sunt sit iure! 
+                    Consectetur molestiae modi laudantium beatae voluptates. Iusto provident iure ratione. Rerum.
+                </p>
+            </div>
+            <div class="controls text-center">
+                <div id="fb-root"></div>
+                <div class="fb-share-button my-5" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large">
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                        Partager
+                    </a>
+                </div>
+                <div>
+                    <a href="/"><button type="button" class="btn my-btn"><i class="fas fa-arrow-left mr-3"></i>Retour</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="page-footer font-small pt-4">
         <div class="container-fluid text-center">  
@@ -63,8 +107,9 @@
     </footer>
 
 
+    
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v4.0"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="/public/javascripts/main.js"></script>
     <script src="https://kit.fontawesome.com/0d820e1095.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

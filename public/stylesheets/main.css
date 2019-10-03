@@ -30,7 +30,7 @@
 }
 
 .section-grey {
-    background-color: rgba(233, 233, 233, 0.363);
+    background-color: rgba(214, 214, 214, 0.644);
 }
 
 
@@ -41,11 +41,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
+    transition: all 0.2s;
 }
 
 .back2top {
@@ -58,6 +60,7 @@ html {
     position: fixed;
     bottom: 25px;
     display: none ;
+    z-index: 99;
 }
 
 .display-block {
@@ -145,12 +148,18 @@ button.btn.my-btn:hover {
     box-shadow: var(--shadow-bottom);
 }
 
+
+footer {
+    background-color: var(--grey-color);
+    box-shadow: var(--shadow-top);
+}
+
 /*****************************
 ******** HOME SECTION ********
 ******************************/
 section#home {
     height: 100vh;
-    background: url('/public/img/cinema-plein-air.jpg') center no-repeat ;
+    background: url('../img/cinema-plein-air.jpg') center no-repeat ;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -179,9 +188,12 @@ div#about-row div {
     width: 50%;
 }
 
+div#about-row div.content {
+    width: 60%;
+}
+
 section#about img {
-    position: relative;
-    bottom: 50px;
+    margin-left: 20px;
 }
 
 
@@ -203,6 +215,14 @@ section#about img {
     box-shadow: var(--shadow-bottom);
 }
 
+.nav-pills .nav-link, .nav-pills .show>.nav-link {
+    font-size: 1.5rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--first-yellow-color);
+    color: black !important;
+}
 
 /*****************************
 ******** INSCRIPTION SECTION ********
@@ -270,6 +290,7 @@ p.info-title i {
     color: var(--first-purple-color) !important;
 }
 
+
 /*****************************
 ******** NEWS SECTION ********
 ******************************/
@@ -305,10 +326,7 @@ ul.pagination a{
 /*****************************
 ******** NEWS SECTION ********
 ******************************/
-footer {
-    background-color: var(--grey-color);
-    box-shadow: var(--shadow-top);
-}
+
 
 ul#socials {
     display: flex;
@@ -319,4 +337,182 @@ ul#socials {
 ul#socials li a i{
     font-size: 3.5rem;
     margin: 5px;
+}
+
+
+/*****************************
+******** MOVIE PAGE ********
+******************************/
+section#movie {
+    width: 80%;
+    margin: auto;
+}
+
+#movie-content{
+    display: flex;
+}
+
+.img-movie-infos {
+    width: 350px;
+}
+
+
+/*****************************
+********* TOPIC PAGE *********
+******************************/
+section#topic  {
+    padding: 50px;
+}
+
+section#topic div.content div#topic-text-content  {
+    text-align: justify;
+}
+
+section#topic div.content img {
+    float: right;
+    margin: 30px;
+}
+
+section#topic footer {
+    clear: both;
+}
+
+
+
+/*****************************
+********* RESPONSIVE *********
+******************************/
+button.navbar-toggler.ml-auto {
+    width: 50px;
+    padding: 5px;
+}
+
+button.navbar-toggler.ml-auto[aria-expanded='true'] {
+    width: 50px;
+    padding: 5px;
+    background-color: var(--second-yellow-color);
+    box-shadow: var(--shadow-bottom);
+}
+
+
+/* Tous les écrans jusqu'a 992px */
+@media screen and (max-width: 992px) {
+
+    /* HEADER */
+    .navbar-expand-lg {
+        background-color: rgba(82, 79, 79, 0.8);
+    }
+
+    /* HOME */
+    section#home .content h1 {
+        font-size: 7rem;
+    }
+
+    /* ABOUT */
+    div#about-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#about-row div {
+        width: 100%;
+    }
+
+    section#about img {
+        position: relative;
+        bottom: 0;
+    }
+
+    /* CINEMA */
+    .movies {
+        text-align: center;
+    }
+
+    /* INSCRIPTION */
+    form {
+        width: 100%;
+    }
+
+    /* NEWS */
+    .card {
+        margin: 5px;
+    }
+
+    /* TOPIC PAGE */
+    section#topic div.content img {
+        margin: 20px;
+        width: 400px;
+    }
+}
+
+/* Tous les écrans jusqu'a 769px */
+@media screen and (max-width: 769px) {
+
+    /* HOME */
+    section#home .content h1 {
+        font-size: 5rem;
+    }
+
+    section#about img {
+        position: relative;
+        bottom: 0;
+    }
+
+    #home-buttons {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* CINEMA */
+
+
+    /* INSCRIPTION */
+
+    /* FIND US */
+    div#contact-row {
+        flex-direction: column;
+    }
+
+    div.contact-informations {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    div.contact-informations p {
+        font-size: 2rem;
+    }
+
+    .map, iframe {
+        width: 100%;
+    }
+
+    /* NEWS */
+    section#news {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    div#news-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        margin: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-img-top {
+        width: 40%;
+    }
+
+    /* TOPIC PAGE */
+    section#topic div.content img {
+        margin: 20px;
+    }
 }
