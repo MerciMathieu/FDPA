@@ -115,6 +115,10 @@ a, a:hover {
     color: black;
 }
 
+small {
+    font-size: 95%;
+}
+
 h1 {
     font-size: 3.5rem;
 }
@@ -203,6 +207,7 @@ section#about img {
 .movies {
     width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 .movie-img {
@@ -394,6 +399,75 @@ button.navbar-toggler.ml-auto[aria-expanded='true'] {
     box-shadow: var(--shadow-bottom);
 }
 
+/* Tous les écrans jusqu'a 1921px */
+@media screen and (min-width: 1921px) {
+    .back2top {
+        width: 50px;
+        height: 60px;
+    }
+    
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    button.btn.my-btn {
+        font-size: 3rem;
+        padding: 15px 50px;
+        width: auto;
+    }
+
+    /* NAV */
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 2.5rem;
+    }
+
+    /* HOME */
+    section#home .content h1 {
+        font-size: 10rem;
+    }
+
+    /* INSCRIPTION */
+    ::placeholder, .form-control, label, legend {
+        font-size: 2rem;
+    }
+
+    /* FIND US */
+    div#contact-row {
+        justify-content: space-evenly;
+    }
+
+    /* NEWS */
+    div#news-row {
+        margin-top: 30px;
+    }
+
+    .card {
+        width: 500px;
+    }
+
+    .card-title {
+        font-size: 2.5rem;
+    }
+
+    p, a, .nav-pills .nav-link, .nav-pills .show>.nav-link {
+        font-size: 2rem;
+    }
+
+    /* TOPIC */
+    section#topic div.content img {
+        width: 40%;
+    }
+
+}
+
 
 /* Tous les écrans jusqu'a 992px */
 @media screen and (max-width: 992px) {
@@ -415,7 +489,7 @@ button.navbar-toggler.ml-auto[aria-expanded='true'] {
     }
 
     div#about-row div {
-        width: 100%;
+        width: 100% !important;
     }
 
     section#about img {
@@ -426,6 +500,12 @@ button.navbar-toggler.ml-auto[aria-expanded='true'] {
     /* CINEMA */
     .movies {
         text-align: center;
+    }
+
+    div#dates {
+        margin: auto;
+        text-align: center;
+        width: max-content;
     }
 
     /* INSCRIPTION */
@@ -448,36 +528,48 @@ button.navbar-toggler.ml-auto[aria-expanded='true'] {
 /* Tous les écrans jusqu'a 769px */
 @media screen and (max-width: 769px) {
 
+    section {
+        width: 100%;
+        padding: 20px 5px;
+        margin: auto;
+    }
+
     /* HOME */
+    section#home .content {
+        padding-top: 25%;
+    }
+
     section#home .content h1 {
         font-size: 5rem;
     }
 
+    /* ABOUT */
+    section#about {
+        padding: 50px 0;
+    }
+
     section#about img {
-        position: relative;
-        bottom: 0;
+        margin-left: 0;
     }
-
-    #home-buttons {
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-        margin: auto;
-    }
-
-    /* CINEMA */
-
-
-    /* INSCRIPTION */
 
     /* FIND US */
     div#contact-row {
         flex-direction: column;
     }
 
+    .row#access-row {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .row#access-row div {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
     div.contact-informations {
         width: 90%;
-        margin: 15px 0;
+        margin: 15px 5px;
     }
 
     div.contact-informations p {
@@ -511,8 +603,109 @@ button.navbar-toggler.ml-auto[aria-expanded='true'] {
         width: 40%;
     }
 
+    /* MOVIE PAGE */
+    section#movie {
+        width: 90%;
+    }
+
     /* TOPIC PAGE */
+    
+
+    div#movie-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    div.content h1 {
+        text-align: center;
+    }
+
+    /* TOPIC PAGE */
+    section#topic {
+        padding: 20px;
+        text-align: center;
+    }
     section#topic div.content img {
-        margin: 20px;
+        float: unset;
+    }
+}
+
+
+/* Tous les écrans jusqu'a 576px */
+@media screen and (max-width: 576px) {
+
+    /* FIND US */
+    div#contact-row {
+        flex-direction: column;
+    }
+
+    .row#access-row {
+        margin: 0 5px;
+    }
+
+    .row#access-row div {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    div.contact-informations {
+        width: 90%;
+        margin: 15px 5px;
+    }
+
+    div.contact-informations p {
+        font-size: 2rem;
+    }
+
+    .map, iframe {
+        width: 100%;
+    }
+
+    /* NEWS */
+    section#news {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    div#news-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        margin: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-img-top {
+        width: 30%;
+        height: 1%;
+    }
+
+    .card-body p {
+        font-size: 1.4rem;
+        line-height: 15px;
+    }
+
+    .card-body button.btn.my-btn {
+        padding: 0;
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    
+
+    /* TOPIC PAGE */
+
+    div.content h1 {
+        text-align: center;
+    }
+
+    section#topic div.content img {
+        margin: 10px;
+        width: 320px;
     }
 }
