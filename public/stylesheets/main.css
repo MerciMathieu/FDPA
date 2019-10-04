@@ -1,10 +1,10 @@
 /*****************************
 ********** VARIABLES *********
 ******************************/
-:root{
+:root{ 
     /* COLORS */
     --first-purple-color: #B400FF;
-    --second-purple-color: #9019FF;
+    --second-purple-color: #8153F1;
     --first-yellow-color: rgb(255, 209, 59);
     --second-yellow-color: rgb(255, 252, 59);
     --black-color: black;
@@ -26,7 +26,7 @@
 }
 
 .purple-section {
-    background-color: #9019FF;
+    background-color: var(--second-purple-color);
 }
 
 .section-grey {
